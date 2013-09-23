@@ -1,0 +1,92 @@
+.input-wrapper {
+	position: relative;
+	margin: 0 auto;
+	width: $inputWidth;
+}
+
+a.add-button {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 44px;
+	width: 50px;
+	background-image: url(../images/images/spot_d_sprite.jpg);
+  background-position: 0 -73px;
+}
+
+input.contact-input {
+	position: absolute;
+	display: block;
+	width: 350px;
+	height: 44px;
+	padding: 0 10px;
+	left: 50px;
+	@include font-stack-omnes-light;
+	font-size: 1.3em;
+	background: #ffffff;
+	color: $gray;
+}
+
+a.search-button {
+	position: absolute;
+	top: 8px;
+	right: 9px;
+	height: 26px;
+	width: 23px;
+	background-image: url(../images/images/spot_d_sprite.jpg);
+  background-position: 24px -100px;
+}
+
+// override some defaults
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+   color: $placeholder;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $placeholder;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $placeholder;
+}
+
+:-ms-input-placeholder {
+   color: $placeholder;
+}
+
+.add-button-go {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 44px;
+	width: 50px;
+	background-image: url(../images/images/spot_d_sprite.jpg);
+  background-position: -51px -73px;
+}
+
+
+input.add-contact-input {
+	border-style:none;
+	background: transparent;
+}
+.add-phonenumber {
+	position: relative;
+	top: -3px;
+	font-size: 1.5em;
+	color: $gray;
+	@include font-stack-omnes-light;
+}
+.add-alias {
+	position: relative;
+	top: -17px;
+	color: lighten($gray, 20%);
+	font-size: 1.2em;
+	@include font-stack-omnes-light;
+}

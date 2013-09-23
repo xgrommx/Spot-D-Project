@@ -1,0 +1,40 @@
+html {
+	background: url('../images/patterns/shattered.png');
+	//background: url('../images/patterns/swirl.png');
+	//background: url('../images/patterns/back_pattern.png');
+	//background: url('../images/patterns/geometry.png');
+}
+
+body {
+	width: 100%;
+	padding-top: 50px;
+}
+
+.main-wrapper {
+	background: $purple;
+	position: relative;
+	margin: 0 auto;
+	width: 450px;
+	height: auto;
+	@include spot-d-box-shadow(0.5%);
+}
+
+.top-nav-bar {
+	width: 100%;
+	height: $logoHeight;
+	background: url('../images/images/header_bg.jpg') repeat-x;
+}
+
+.main-logo {
+	position: absolute;
+	height: $logoHeight;
+	width: $spriteHeight;
+	background-image: url('../images/images/spot_d_sprite.jpg');
+	background-position: 0px 0px;
+}
+
+.main-view {
+	position: relative;
+	height: auto;
+	padding-bottom: 80px;
+}

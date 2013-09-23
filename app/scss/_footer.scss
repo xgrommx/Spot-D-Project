@@ -1,0 +1,18 @@
+footer {
+	position: relative;
+	margin: 20px auto;
+	width: 450px;
+	height: auto;
+	text-align: center;
+	padding: 40px 0 40px;
+	a {
+		@include font-stack-omnes-light;
+		text-decoration: none;
+		color: darken($footerText, 10%);
+		font-size: .925em;
+		span {
+			color: $pink;
+			padding: 0 5px;
+		}
+	}
+}

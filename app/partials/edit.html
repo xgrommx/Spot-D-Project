@@ -1,0 +1,22 @@
+<section id="main-view" class="main-view">
+
+	<form class="input-wrapper">
+		<a class="add-button" ng-click="add()" alt="add contact"></a>
+			<input type="text" placeholder="contact names" class="contact-input">
+		<a class="search-button" alt="search contacts"></a>
+	</form> <!-- end input wrapper -->
+
+	<form ng-submit="edit()" ng-include="'partials/form.html'"></form>
+
+		<!-- Start Contact List -->
+	<div class="contact-list">
+		<div class="contact-wrapper" ng-animate=" 'animate' ">
+			<div class="avatar"></div>
+			<div class="contact-info">
+				<h2>{{contact.name}}</h2>
+				<p class="about">{{contact.about}}</p>
+			</div>
+		</div>
+	</div>
+
+</section> <!-- END Main View -->

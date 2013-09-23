@@ -1,0 +1,14 @@
+{
+  "name": "spotd_project",
+  "version": "0.0.1",
+  "description": "spotd demo project for InRhythm",
+  "repository": "",
+  "author": "domenico colandrea",
+  "license": "BSD",
+  "gitHead": "fefed5b01ea1a7f97e57845607d98578d56dcf73",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-compass": "latest",
+    "grunt-contrib-watch": "latest"
+  }
+}

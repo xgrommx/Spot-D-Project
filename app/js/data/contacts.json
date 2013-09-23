@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Domenico Colandrea",
+    "about": "Web Developer",
+    "number": "732-928-6121"
+  },
+  {
+    "name": "Alan Adler",
+    "about": "The prankster",
+    "number": "848-992-8643"
+  },
+  {
+    "name": "Brian Bender",
+    "about": "Party, party, party",
+    "number": "212-846-9278"
+  },
+  {
+    "name": "Choi Chen",
+    "about": "Best for legal advice",
+    "number": "609-553-9286"
+  },
+  {
+    "name": "Debra Delai",
+    "about": "Smiles always!!",
+    "number": "732-803-8925"
+  },
+  {
+    "name": "Elaine Ellison",
+    "about": "Dinner party, prom date",
+    "number": "732-882-7512"
+  },
+  {
+    "name": "Fred Farmer",
+    "about": "Cool dude, awesome musician",
+    "number": "646-735-8780"
+  },
+  {
+    "name": "George Gent",
+    "about": "Actor, Philosopher",
+    "number": "212-767-9099"
+  }
+]

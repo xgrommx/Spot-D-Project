@@ -1,0 +1,10 @@
+http_path = "/"
+css_dir = "css"
+sass_dir = "scss"
+images_dir = "images"
+javascripts_dir = "js"
+output_style = :compressed
+environment = :development
+line_comments = false
+color_output = false
+preferred_syntax = :scss
