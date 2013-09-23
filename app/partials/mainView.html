@@ -1,7 +1,7 @@
 <section id="main-view" class="main-view">
 
 	<form class="input-wrapper">
-		<a href="#/add" class="add-button" ng-click="add()" alt="add contact"></a>
+		<a href="/add" class="add-button" ng-click="add()" alt="add contact"></a>
 		<input ng-model="contact.name" type="text" placeholder="contact names" class="contact-input">
 		<a class="search-button" alt="search contacts"></a>
 	</form> <!-- end input wrapper -->
@@ -15,14 +15,14 @@
 				<p class="about">{{contact.about}}</p>
 			</div>
 			<div class="hover-info">
-				<a href="#/edit/{{id}}" alt="edit contact">
+				<a href="/edit/{{id}}" alt="edit contact">
 					<p class="number"><span class="phone-icon"></span>{{contact.number}}</p>
 				</a>
 				<div class="editing-icons">
-					<a href="#/edit/{{id}}" alt="edit contact">
+					<a href="/edit/{{id}}" alt="edit contact">
 						<span class="edit-icon"></span>
 					</a>
-					<a href="#/remove/{{id}}" alt="remove contact">
+					<a href="/remove/{{id}}" alt="remove contact">
 						<span class="trash-icon"></span>
 					</a>
 				</div>
