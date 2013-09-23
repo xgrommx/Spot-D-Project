@@ -12,8 +12,8 @@ spotdProject.controller('AddCtrl',
   function AddCtrl($scope, $location) {
     $scope.contact = {};
     $scope.add = function () {
-    	console.log("clicekd!")
-      $scope.contacts.push($scope.contact);
+    	console.log("clickd!")
+      $scope.contacts.unshift($scope.contact);
       $location.url('/');
     };
   });

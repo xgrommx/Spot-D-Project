@@ -5,8 +5,7 @@ spotdProject.config(['$routeProvider', '$locationProvider', function($routeProvi
 	$locationProvider.html5Mode(true);
 	$routeProvider
 		.when('/', {
-			templateUrl: 'partials/mainView.html',
-			controller: 'MainCtrl'
+			templateUrl: 'partials/mainView.html'
 		})
     .when('/add', {
       templateUrl: 'partials/add.html',
