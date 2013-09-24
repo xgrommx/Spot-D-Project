@@ -1,5 +1,6 @@
 'use strict';
 
+// MainCtrl
 spotdProject.controller('MainCtrl',
 	function MainCtrl ($scope, $http) {
 		// get static contact data from contacts.json
@@ -8,6 +9,7 @@ spotdProject.controller('MainCtrl',
 		});
 	});
 
+// AddCtrl to `Add` new contacts to contact list
 spotdProject.controller('AddCtrl',
   function AddCtrl($scope, $location) {
     $scope.contact = {};
@@ -18,6 +20,7 @@ spotdProject.controller('AddCtrl',
     };
   });
 
+// EditCtrl to `Edit` contact
 spotdProject.controller('EditCtrl',
   function EditCtrl($scope, $routeParams, $location) {
     $scope.contact = $scope.contacts[$routeParams.id];
@@ -27,6 +30,7 @@ spotdProject.controller('EditCtrl',
     };
   });
 
+// RemoveCtrl to `Delete` contact and provide `cancel` functionality
 spotdProject.controller('RemoveCtrl',
   function RemoveCtrl($scope, $routeParams, $location) {
     $scope.contact = $scope.contacts[$routeParams.id];
