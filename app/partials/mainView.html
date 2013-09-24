@@ -8,7 +8,7 @@
 
 	<!-- Start Contact List -->
 	<div class="contact-list">
-		<div class="contact-wrapper" ng-repeat="(id, contact) in contacts | filter:contact.name" ng-animate=" 'animate' ">
+		<div class="contact-wrapper" ng-repeat="(id, contact) in contacts | filter:contact | orderBy: 'name' " ng-animate=" 'animate' ">
 			<div class="avatar"></div>
 			<div class="contact-info">
 				<h2>{{contact.name}}</h2>
