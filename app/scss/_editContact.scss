@@ -1,0 +1,75 @@
+.edit-contact-list {
+  position: relative;
+  top: 44px;
+  width: $inputWidth;
+  height: auto;
+  margin: 0 auto;
+  //@include spot-d-box-shadow(0.2%);
+  @extend %clearfix;
+}
+
+.edit-contact-wrapper {
+  position: relative;
+  width: $inputWidth;
+  height: 130px;
+  background: #dfdde0;
+  border-bottom: 1px solid lighten($lightGray, 10%);
+}
+
+.edit-avatar {
+  @include transition(all .2s linear);
+  height: 79px;
+  width: 67px;
+  position: relative;
+  top: 16px;
+  left: 15px;
+  background-image: url('../images/images/spot_d_sprite.jpg');
+  background-position: 92px 79px;
+  float: left;
+}
+
+.edit-contact-info {
+  position: relative;
+  top: -18px;
+  left: 20px;
+  float: left;
+  padding: 10px 0 0 10px;
+
+  h2 > input {
+    @include font-stack-omnes-light;
+    font-size: .8em;
+    width: 100%;
+    color: $darkGray;
+    line-height: 0;
+  }
+  p.about > input {
+    @include font-stack-omnes-light;
+    font-size: .9em;
+    color: darken($lightGray, 10%);
+    letter-spacing: 1px;
+    position: relative;
+    top: -16px;
+  }
+  .edit-number {
+    position: relative;
+    top: -10px;
+  }
+}
+
+input.edit-contact-input {
+  border-style:none;
+  background: transparent;
+  width: 100%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.edit-button {
+  position: relative;
+  display: block;
+  background: green;
+  height: auto;
+  width: 600px;
+  background: green;
+  z-index: 1000000;
+}

@@ -1,22 +1,22 @@
-<section id="main-view" class="main-view">
+<section ng-model="contacts" id="main-view" class="main-view">
 
 	<form class="input-wrapper">
-		<a class="add-button" ng-click="add()" alt="add contact"></a>
-			<input type="text" placeholder="contact names" class="contact-input">
+		<a class="add-button" ng-click="edit()" alt="edit contact"></a>
+			<input type="text" placeholder="Edit {{contact.name}}" disabled class="contact-input">
 		<a class="search-button" alt="search contacts"></a>
 	</form> <!-- end input wrapper -->
 
-	<form ng-submit="edit()" ng-include="'partials/form.html'"></form>
-
 		<!-- Start Contact List -->
-	<div class="contact-list">
-		<div class="contact-wrapper" ng-animate=" 'animate' ">
-			<div class="avatar"></div>
-			<div class="contact-info">
-				<h2></h2>
-				<p class="about"></p>
+	<div class="edit-contact-list">
+		<div class="edit-contact-wrapper" ng-animate=" 'animate' ">
+			<div class="edit-avatar"></div>
+			<div class="edit-contact-info">
+				<h2><input ng-model="contact.name" class="edit-contact-input" type="text" value="{{contact.name}}"></h2>
+				<p class="about"><input ng-model="contact.about" class="edit-contact-input" type="text" value="{{contact.about}}"></p>
+        <p class="about edit-number"><input ng-model="contact.number" class="edit-contact-input" type="text" value="{{contact.number}}"></p>
 			</div>
 		</div>
 	</div>
+
 
 </section> <!-- END Main View -->

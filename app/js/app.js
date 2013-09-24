@@ -2,7 +2,7 @@
 var spotdProject = angular.module('spotdProject', []);
 
 spotdProject.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
-	$locationProvider.html5Mode(true);
+	//$locationProvider.html5Mode(true);
 	$routeProvider
 		.when('/', {
 			templateUrl: 'partials/mainView.html'
