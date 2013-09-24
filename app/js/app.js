@@ -20,7 +20,5 @@ spotdProject.config(['$routeProvider', '$locationProvider', function($routeProvi
 		.otherwise({
 			redirectTo: '/'
 		});
-
-  // To allow URL's with no hash un commment the line below.
   $locationProvider.html5Mode(true);
 }]);
