@@ -2,7 +2,11 @@ A Demo Contact Manager App built with AngularJS!!
 =======
 
 
-AT THE MOMENT YOU MUST HAVE NODE INSTALLED AND INSTALL [NWS](https://npmjs.org/package/nws "NWS") A NODE POWERED STATIC WEB SERVER IN THE CURRENT WORKING DIRECTORY..
+YOU NEED NODE OR MAMP TO RUN THE SERVER..
+
+WITH MAMP CHOOSE THE (/app) DIRECTORY AND START THE SERVER UP.
+
+WITH NODE INSTALLED, INSTALL [NWS](https://npmjs.org/package/nws "NWS") A NODE POWERED STATIC WEB SERVER IN THE CURRENT WORKING DIRECTORY (/app)
 
 ####SIMPLY RUN 
 
@@ -28,8 +32,4 @@ nws
 
 ####THATS IT!!
 
-####It should be serving your files on __localhost:3030__
-
-###Coming sooon
-
-*I will be implementing an Express Server ASAP and hooking up all the routes, finishing the CRUD and adding some finishing touches*
+#####It should be serving your files on __localhost:3030__ if your using node nws or whatever you make the MAMP server listen on.
