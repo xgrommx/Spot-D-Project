@@ -1,10 +1,14 @@
 	<!-- Start Contact List -->
 	<div class="contact-list">
-		<div class="contact-wrapper" ng-animate=" 'animate' ">
+		<div class="add-contact-wrapper" ng-animate=" 'animate' ">
 			<div class="avatar"></div>
-			<div class="contact-info">
+			<div class="add-contact-info">
+        <input type="text" ng-model="contact.name"class="add-contact-input add-phonenumber" placeholder="John Smith">
 				<input type="text" ng-model="contact.number"class="add-contact-input add-phonenumber" placeholder="000 000 0000"><h2></h2>
 				<input type="text" ng-model="contact.about" class="add-contact-input add-alias" placeholder="alias"><p class="about"></p>
 			</div>
 		</div>
+    <div class="delete-button-group">
+      <button ng-click="add()" class="btn btn-add">Add Contact</button>
+    </div>
 	</div>
