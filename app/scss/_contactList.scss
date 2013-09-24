@@ -8,6 +8,16 @@
 	@extend %clearfix;
 }
 
+.add-contact-contact-list {
+  position: relative;
+  top: 21px;
+  width: $inputWidth;
+  height: auto;
+  margin: 0 auto;
+  //@include spot-d-box-shadow(0.2%);
+  @extend %clearfix;
+}
+
 .contact-wrapper {
 	position: relative;
 	width: $inputWidth;

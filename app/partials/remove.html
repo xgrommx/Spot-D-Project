@@ -1,0 +1,22 @@
+<section ng-model="contacts" id="main-view" class="main-view">
+
+  <form class="input-wrapper">
+    <a class="add-button" ng-click="edit()" alt="edit contact"></a>
+      <input type="text" placeholder="Delete {{contact.name}}" disabled class="contact-input">
+    <a class="search-button" alt="search contacts"></a>
+  </form> <!-- end input wrapper -->
+
+    <!-- Start Contact List -->
+  <div class="edit-contact-list">
+    <div class="edit-contact-wrapper" ng-animate=" 'animate' ">
+      <div class="delete-contact-info">
+        <p class="delet-contact">Are you sure you would like to delete<br><span>{{contact.name}}?</span></p>
+      </div>
+    </div>
+    <div class="delete-button-group">
+      <button ng-click="back()" class="btn btn-delete">Cancel</button>
+      <button ng-click="remove()" class="btn btn-delete-2">Delete</button>
+    </div>
+  </div>
+
+</section> <!-- END Main View -->

@@ -1,8 +1,6 @@
 'use strict';
 var spotdProject = angular.module('spotdProject', []);
-
 spotdProject.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
-	//$locationProvider.html5Mode(true);
 	$routeProvider
 		.when('/', {
 			templateUrl: 'partials/mainView.html'
@@ -22,5 +20,5 @@ spotdProject.config(['$routeProvider', '$locationProvider', function($routeProvi
 		.otherwise({
 			redirectTo: '/'
 		});
-
+  //$locationProvider.html5Mode(true);
 }]);

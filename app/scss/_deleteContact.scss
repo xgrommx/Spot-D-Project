@@ -1,0 +1,94 @@
+.delet-contact {
+	position: relative;
+	top: -2px;
+	left: 0;
+	color: lighten($darkGray, 35%);
+	background: lighten($lightGray, 38%);
+	padding: 10px;
+	border-left: 10px solid $green;
+	@include font-stack-omnes-light;
+	font-size: 1.1em;
+	span {
+		@include font-stack-omnes;
+		color: lighten($darkGray, 35%);
+	}
+}
+
+.delete-contact-info {
+	position: relative;
+	padding: 10px;
+	height: 101%;
+}
+
+.delete-button-group {
+	position: relative;
+	top: 0px;
+}
+
+.contact-info {
+	position: relative;
+	float: left;
+	padding: 10px 0 0 10px;
+
+	h2 {
+		@include font-stack-omnes-light;
+		font-size: 1.3em;
+		color: $darkGray;
+		line-height: 0;
+	}
+	p.about {
+		@include font-stack-omnes-light;
+		font-size: .9em;
+		color: $lightGray;
+		letter-spacing: 1px;
+	}
+}
+
+.btn {
+	@include font-stack-omnes-light;
+	border: none;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 60px;
+	width: 100%;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	margin-top: 8px;
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.1);
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+
+.btn-delete {
+	background: #303030;
+	color: #fff;
+	height: 70px;
+	min-width: 260px;
+	line-height: 24px;
+	font-size: 16px;
+	overflow: hidden;
+	@include transition(all .1s ease-in);
+	&:hover {
+		@include transition(all .1s ease-in);
+		background: darken(#303030, 5%);
+	}
+}
+.btn-delete-2 {
+	background: lighten($red, 8%);;
+	color: #fff;
+	height: 70px;
+	min-width: 260px;
+	line-height: 24px;
+	font-size: 16px;
+	overflow: hidden;
+	@include transition(all .1s ease-in);
+	&:hover {
+		@include transition(all .1s ease-in);
+		background: $red;
+	}
+}
