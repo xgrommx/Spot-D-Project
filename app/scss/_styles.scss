@@ -8,6 +8,11 @@ body {
 	width: 100%;
 	padding-top: 50px;
   overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
 }
 
 .main-wrapper {
