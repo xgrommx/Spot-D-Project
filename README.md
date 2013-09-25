@@ -1,4 +1,4 @@
-A Demo Contact Manager App built with AngularJS!!
+A Demo Contact Manager App built with Angular and Firebase!!
 =======
 
 ###Some of the things I used to build it
