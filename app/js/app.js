@@ -1,5 +1,5 @@
 'use strict';
-var spotdProject = angular.module('spotdProject', []);
+var spotdProject = angular.module('spotdProject', ['firebase']);
 spotdProject.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 	$routeProvider
 		.when('/', {
