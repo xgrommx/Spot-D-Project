@@ -1,5 +1,5 @@
 'use strict';
-var spotdProject = angular.module('spotdProject', ['firebase']);
+var spotdProject = angular.module('spotdProject', ['firebase', 'ajoslin.promise-tracker']);
 spotdProject.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 	$routeProvider
 		.when('/', {

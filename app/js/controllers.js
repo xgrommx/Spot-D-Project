@@ -1,15 +1,16 @@
 'use strict';
 
 // MainCtrl
-spotdProject.controller('MainCtrl', ['$scope', 'angularFire',
-	function MainCtrl ($scope, angularFire) {
-		// get static contact data from contacts.json
-		//$http.get('../js/data/contacts.json').success(function(data) {
-			//$scope.contacts = data;
-    var data = new Firebase('https://domenicocolandrea19.firebaseio.com/');
-    angularFire(data, $scope, 'contacts');
-		}
-  ]);
+spotdProject.controller('MainCtrl', ['$scope', 'angularFire', 'promiseTracker',
+	function MainCtrl ($scope, angularFire, promiseTracker) {
+    $scope.contactFinder = promiseTracker('contacts');
+    var url = new Firebase('https://domenicocolandrea19.firebaseio.com/')
+    ,   promise = angularFire(url, $scope, 'contacts', {});
+    promise.then(function(){
+      console.log('contacts are loaded!!!');
+      $('#spinner-wrap').hide();
+    });
+  }]);
 
 // AddCtrl to `Add` new contacts to contact list
 spotdProject.controller('AddCtrl',
