@@ -1,35 +1,36 @@
 A Demo Contact Manager App built with AngularJS!!
 =======
 
+###Some of the things I used to build it
 
-YOU NEED NODE OR MAMP TO RUN THE SERVER..
 
-WITH MAMP CHOOSE THE (/app) DIRECTORY AND START THE SERVER UP.
+**AngularJS**
 
-WITH NODE INSTALLED, INSTALL [NWS](https://npmjs.org/package/nws "NWS") A NODE POWERED STATIC WEB SERVER IN THE CURRENT WORKING DIRECTORY (/app)
+*An awesome MVVM style javascript framework that is perfect for building Single Page Applications!*
 
-####SIMPLY RUN 
+**SCSS/Compass**
 
-``````
-npm install -g nws
+*Why use regular ol' css when you can use SASS and get VARIABLES and MIXINS and so much more awesome stuff*
 
-``````
+**Grunt**
 
-####USAGE
+*A task runner on the command line for running all kinds of tasks for you like compiling all of your scss files, linting, concatenating, and uglifying your js files, and SO MUCH MORE! Grunt is amazing. USE IT!!*
 
-*In your terminal go to the root of the directory your working in and type*
+**html5**
 
-``````
-npm install
+*Write your markup more semantically and take advantage of some of the cool new features html5 offers.*
 
-``````
-*then type*
+**NodeJS**
 
-``````
-nws
+*Just the thought of writing javascript on the server is rad but using nodes package manager NPM is so handy sometimes..need something just NPM install that bad boy*
 
-``````
 
-####THATS IT!!
 
-#####It should be serving your files on __localhost:3030__ if your using node nws or whatever you make the MAMP server listen on.
+[Click Here for Demo](http://domenicocolandrea.com/demo-app).
+=======
+
+
+
+**Wanna work on a project together? LETS DO IT**
+
+[DomenicoColandrea.com](http://domenicocolandrea.com)
