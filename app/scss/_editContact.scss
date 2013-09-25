@@ -73,3 +73,20 @@ input.edit-contact-input {
   background: green;
   z-index: 1000000;
 }
+
+.btn-save-contact {
+  position: relative;
+  top: -20px;
+  background: #303030;
+  color: #fff;
+  height: 70px;
+  min-width: 260px;
+  line-height: 24px;
+  font-size: 16px;
+  overflow: hidden;
+  @include transition(all .1s ease-in);
+  &:hover {
+    @include transition(all .1s ease-in);
+    background: darken(#303030, 5%);
+  }
+}
