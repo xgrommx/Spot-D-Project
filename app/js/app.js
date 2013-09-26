@@ -1,5 +1,5 @@
 'use strict';
-var spotdProject = angular.module('spotdProject', ['firebase', 'ajoslin.promise-tracker']);
+var spotdProject = angular.module('spotdProject', ['firebase']);
 spotdProject.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 	$routeProvider
 		.when('/', {
@@ -20,5 +20,6 @@ spotdProject.config(['$routeProvider', '$locationProvider', function($routeProvi
 		.otherwise({
 			redirectTo: '/'
 		});
+  // uncomment below to turn on html5 mode for `hashless` urls
   //$locationProvider.html5Mode(true);
 }]);

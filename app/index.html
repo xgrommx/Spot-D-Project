@@ -10,14 +10,13 @@
   <link rel="stylesheet" href="css/main.css"/>
   <base href="/">
 </head>
-<body ng-cloak ng-controller="MainCtrl">
+<body ng-controller="MainCtrl">
   <section class="main-wrapper">
     <nav class="top-nav-bar">
       <a class="main-logo" href="/" alt="main-logo"></a>
     </nav>
 
   	<div ng-view></div>
-
 	</section> <!-- End main wrapper -->
 	<footer>
 		<a href="http://www.github.com/domenicocolandrea86" target="_blank" alt="made by domenico colandrea for InRhythm">
@@ -28,8 +27,11 @@
   <script src='https://cdn.firebase.com/v0/firebase.js'></script>
   <script src="/lib/angular/angular-fire.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="/lib/angular/promise-tracker.min.js"></script>
+  <script src="/lib/spin.js"></script>
   <script src="/js/app.js"></script>
+  <script src="/js/directives.js"></script>
   <script src="/js/controllers.js"></script>
+
+
 </body>
 </html>

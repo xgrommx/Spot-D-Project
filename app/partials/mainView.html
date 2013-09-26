@@ -1,4 +1,4 @@
-<section id="main-view" class="main-view">
+<section my-loading-spinner="viewLoading" id="main-view" class="main-view">
 	<form class="input-wrapper">
 		<a href="#/add" class="add-button" ng-click="add()" alt="add contact"></a>
 		<input ng-model="contact.name" type="text" placeholder="contact names" class="contact-input">
@@ -7,7 +7,7 @@
 
 	<!-- Start Contact List -->
 	<div class="contact-list">
-		<div class="contact-wrapper" ng-repeat="(id, contact) in contacts | filter:contact.name" ng-animate=" 'animate' ">
+		<div class="contact-wrapper" ng-repeat="(id, contact) in contacts | filter:contact.name">
 			<div class="avatar"></div>
 			<div class="contact-info">
 				<h2>{{contact.name}}</h2>
@@ -28,27 +28,4 @@
 			</div>
 		</div>
 	</div>
-  <!-- loading spinner -->
-  <div id="spinner-wrap">
-    <div id="floatingCirclesG">
-      <div class="f_circleG" id="frotateG_01">
-      </div>
-      <div class="f_circleG" id="frotateG_02">
-      </div>
-      <div class="f_circleG" id="frotateG_03">
-      </div>
-      <div class="f_circleG" id="frotateG_04">
-      </div>
-      <div class="f_circleG" id="frotateG_05">
-      </div>
-      <div class="f_circleG" id="frotateG_06">
-      </div>
-      <div class="f_circleG" id="frotateG_07">
-      </div>
-      <div class="f_circleG" id="frotateG_08">
-      </div>
-    </div>
-  </div>
-  <!-- End loading spinner -->
-
 </section> <!-- END Main View -->

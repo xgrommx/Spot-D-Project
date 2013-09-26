@@ -1,11 +1,17 @@
 .animate-enter {
-	-webkit-transition: .3s ease-in all; /* Chrome */
+	-o-transition: .3s ease-in all;
+  -ms-transition: .3s ease-in all;
+  -moz-transition: .3s ease-in all;
+  -webkit-transition: .3s ease-in all;
 	transition: .3s ease-in all;
 	opacity: 0;
 }
- 
+
 .animate-enter.animate-enter-active {
-	-webkit-transition: .3s ease-in all; /* Chrome */
+	-o-transition: .3s ease-in all;
+  -ms-transition: .3s ease-in all;
+  -moz-transition: .3s ease-in all;
+  -webkit-transition: .3s ease-in all;
 	transition: .3s ease-in all;
 	opacity: 1;
 }

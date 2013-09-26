@@ -1,23 +1,23 @@
 'use strict';
 
 // MainCtrl
-spotdProject.controller('MainCtrl', ['$scope', 'angularFire', 'promiseTracker',
-	function MainCtrl ($scope, angularFire, promiseTracker) {
-    $scope.contactFinder = promiseTracker('contacts');
+spotdProject.controller('MainCtrl', ['$scope', 'angularFire','$q',
+	function MainCtrl ($scope, angularFire, $q) {
+    $scope.viewLoading = true;
     var url = new Firebase('https://domenicocolandrea19.firebaseio.com/')
     ,   promise = angularFire(url, $scope, 'contacts', {});
-    promise.then(function(){
-      console.log('contacts are loaded!!!');
-      $('#spinner-wrap').hide();
+    $q.all([promise]).then(function(){
+      $scope.viewLoading = false;
+      console.log('Contacts loaded from firebase!');
     });
   }]);
 
 // AddCtrl to `Add` new contacts to contact list
 spotdProject.controller('AddCtrl',
-  function AddCtrl($scope, $location, angularFire) {
+  function AddCtrl($scope, $location) {
     $scope.contact = {};
     $scope.add = function () {
-    	console.log("clickd!")
+    	console.log('clickd!')
       $scope.contacts.unshift($scope.contact);
       $location.url('/');
     };
@@ -25,7 +25,7 @@ spotdProject.controller('AddCtrl',
 
 // EditCtrl to `Edit` contact
 spotdProject.controller('EditCtrl',
-  function EditCtrl($scope, $routeParams, $location, angularFire) {
+  function EditCtrl($scope, $routeParams, $location) {
     $scope.contact = $scope.contacts[$routeParams.id];
     $scope.edit = function () {
       $scope.contacts[$routeParams.id] = $scope.contact;
@@ -35,7 +35,7 @@ spotdProject.controller('EditCtrl',
 
 // RemoveCtrl to `Delete` contact and provide `cancel` functionality
 spotdProject.controller('RemoveCtrl',
-  function RemoveCtrl($scope, $routeParams, $location, angularFire) {
+  function RemoveCtrl($scope, $routeParams, $location) {
     $scope.contact = $scope.contacts[$routeParams.id];
     $scope.remove = function () {
       $scope.contacts.splice($routeParams.id, 1);
